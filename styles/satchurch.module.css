@@ -34,11 +34,14 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #3bc752;
   text-decoration: none;
 }
 
-.title a:hover,
+.title a:hover{
+  text-decoration: none;
+  color:#2fa543;
+}
 .title a:focus,
 .title a:active {
   text-decoration: underline;
@@ -118,4 +121,8 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.hoverer:hover{
+  color:aqua
 }
