@@ -7,7 +7,7 @@ import style from '../styles/satchurch.module.css'
 //COMPONENTS
 
 //OPERATIONS
-import {MainLayout} from './layouts/main'
+import MainLayout from './layouts/main'
 import router from 'next/router'
 
 const Home: NextPage = () => { 

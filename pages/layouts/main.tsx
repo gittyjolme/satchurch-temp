@@ -20,7 +20,7 @@ interface Gilliad{
   age:string | number;
 }
 //OPERATIONS
-export const MainLayout:React.FC<MainSubjects> = ({onFlicks}) => {
+const MainLayout:React.FC<MainSubjects> = ({onFlicks}) => {
 
   const RobTheBank = (Gots:Gilliad)=>{
     const robbery: string | number = ''
@@ -42,4 +42,6 @@ export const MainLayout:React.FC<MainSubjects> = ({onFlicks}) => {
     </Fragment>
   )
 }
+
+export default MainLayout
 
