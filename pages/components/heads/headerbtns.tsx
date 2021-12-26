@@ -20,7 +20,7 @@ export const DoggyHead:React.FC<Pottery> =({name,suriname, age})=>{
     </Fragment>
 } 
 
-export const ActiveLink:React.FC<ActingRouter>=({children, href})=>{
+const ActiveLink:React.FC<ActingRouter>=({children, href})=>{
     const router = useRouter()
     const style = {
       marginRight: 10,

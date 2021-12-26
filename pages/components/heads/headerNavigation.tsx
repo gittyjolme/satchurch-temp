@@ -5,7 +5,7 @@ import { Fragment } from 'react'
 //import styles from '../../../styles/satchurch.module.css'
 
 //COMPONENTS
-import {ActiveLink} from './headerbtns'
+import ActiveLink from './headerbtns'
 
 //INTERFACES
 interface ActingRouter{
@@ -13,7 +13,7 @@ interface ActingRouter{
 }
 
 //OPERATIONS
-export const HeadNavigation = ()=>{
+const HeadNavigation = ()=>{
     return(
     <Fragment>
         <ActiveLink href="/" >

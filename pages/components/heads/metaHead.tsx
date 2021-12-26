@@ -1,7 +1,7 @@
 //LIBRARIES
 import Head from 'next/head'
 
-//COMPONENTS
+//COMPONENTX
 
 //OPERATIONS
 export interface HeadMetaKeeper{

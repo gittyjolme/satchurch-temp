@@ -7,9 +7,9 @@ import Image from 'next/image'
 import style from '../styles/satchurch.module.css'
 
 //COMPONENTS
-import {MetaHead} from '../components/heads/metaHead'
-import {HeadNavigation} from '../components/heads/headerNavigation'
-//import store from '../../store'
+import MetaHead from '../components/heads/metaHead'
+import HeadNavigation from '../components/heads/headerNavigation'
+//import store from '../../store' 
 
 //INTERFACES
 interface MainSubjects{
