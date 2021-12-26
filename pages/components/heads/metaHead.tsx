@@ -17,3 +17,5 @@ export const MetaHead = ()=>{
         </Head>
     )
 }
+
+export default MetaHead

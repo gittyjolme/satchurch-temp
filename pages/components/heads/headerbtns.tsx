@@ -42,3 +42,4 @@ export const ActiveLink:React.FC<ActingRouter>=({children, href})=>{
     )
   }
   
+  export default ActiveLink
