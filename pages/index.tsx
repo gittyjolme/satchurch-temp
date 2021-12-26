@@ -11,10 +11,8 @@ import MainLayout from './layouts/main'
 import router from 'next/router'
 
 const Home: NextPage = () => { 
-
-  return(
-    <Fragment>
-      <MainLayout onFlicks={()=>{
+  /*
+  onFlicks={()=>{
         return  <Fragment>
                       <section style={{
                           position:"absolute",
@@ -47,8 +45,11 @@ const Home: NextPage = () => {
                       </section>
                       
                 </Fragment>
-      }}>
-      </MainLayout>
+      }}
+  */
+  return(
+    <Fragment>
+      <MainLayout />
     </Fragment>
   )
 }

@@ -12,16 +12,16 @@ import MetaHead from '../components/heads/metaHead'
 //import store from '../../store' 
 
 //INTERFACES
-interface MainSubjects{
-  onFlicks:()=>void
-}
+// interface MainSubjects{
+//   onFlicks:()=>void
+// }
 
 interface Gilliad{
   name:string;
   age:string | number;
 }
 //OPERATIONS
-const MainLayout:React.FC<MainSubjects> = ({onFlicks}) => {
+const MainLayout = () => { //:React.FC<MainSubjects> //{onFlicks}
 
   const RobTheBank = (Gots:Gilliad)=>{
     const robbery: string | number = ''
@@ -38,7 +38,8 @@ const MainLayout:React.FC<MainSubjects> = ({onFlicks}) => {
     <Fragment>
         <div className="main_body">
             <MetaHead />
-            {onFlicks()}
+            <h1>Welcome to SAT via Vercel!</h1>
+            {/* {onFlicks()} */}
         </div>
     </Fragment>
   )
