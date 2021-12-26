@@ -13,14 +13,15 @@ import MetaHead from '../components/heads/metaHead'
 
 //INTERFACES
 interface MainSubjects{
-    onFlicks:string;
+  onFlicks:()=>void
 }
+
 interface Gilliad{
   name:string;
   age:string | number;
 }
 //OPERATIONS
-const MainLayout:React.FC<MainSubjects> = () => {
+const MainLayout:React.FC<MainSubjects> = ({onFlicks}) => {
 
   const RobTheBank = (Gots:Gilliad)=>{
     const robbery: string | number = ''
@@ -37,6 +38,7 @@ const MainLayout:React.FC<MainSubjects> = () => {
     <Fragment>
         <div className="main_body">
             <MetaHead />
+            {onFlicks()}
         </div>
     </Fragment>
   )
