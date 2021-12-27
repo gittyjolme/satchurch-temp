@@ -12,34 +12,27 @@ import MetaHead from '../components/heads/metaHead'
 //import store from '../../store' 
 
 //INTERFACES
-// interface MainSubjects{
-//   onFlicks:()=>void
-// }
+interface Portables{
+  onFlicks():any
+}
+export interface MainSubjects{
+  onFlicks:()=>{}
+}
 
-interface Gilliad{
+export interface Gilliad{
   name:string;
   age:string | number;
 }
+const onFlicks = (a:any)=>{
+  return a
+}
 //OPERATIONS
-const MainLayout = () => { //:React.FC<MainSubjects> //{onFlicks}
-
-  const RobTheBank = (Gots:Gilliad)=>{
-    const robbery: string | number = ''
-    const lollipop : boolean [] = [false]
-    return(
-      <Fragment>
-        <section>
-          <h1>{Gots.name} is {Gots.age}</h1>
-        </section>
-      </Fragment>
-    )
-  }
+const MainLayout:React.FC<MainSubjects>= ({onFlicks}) => { //:React.FC<MainSubjects> //{onFlicks}
   return(
     <Fragment>
         <div className="main_body">
             <MetaHead />
-            <h1>Welcome to SAT via Vercel!</h1>
-            {/* {onFlicks()} */}
+            {onFlicks}
         </div>
     </Fragment>
   )
